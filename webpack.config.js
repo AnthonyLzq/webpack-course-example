@@ -2,12 +2,16 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 /**
  * @type {import('webpack').Configuration}
  */
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
@@ -57,7 +61,7 @@ module.exports = {
       minify: 'auto'
     }),
     new MiniCSSExtractPlugin({
-      filename: './index.css'
+      filename: './assets/[name].css'
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -67,5 +71,12 @@ module.exports = {
         }
       ]
     })
-  ]
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new CSSMinimizerPlugin(),
+      new TerserPlugin()
+    ]
+  }
 }
