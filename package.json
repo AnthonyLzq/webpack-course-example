@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
+    "build": "yarn env && webpack --config webpack.config.js",
     "release": "standard-version",
     "dev": "webpack --config webpack.config.dev.js",
-    "watch": "webpack --watch --config webpack.config.js"
+    "watch": "webpack --watch --config webpack.config.js",
+    "env": "node ./scripts/create-env.js"
   },
   "keywords": [
     "webpack"
