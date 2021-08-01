@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0](///compare/v0.11.0...v0.12.0) (2021-08-01)
+
+
+### Features
+
+* implemented watch mode for webpack 0c726d2
+
 ## [0.11.0](///compare/v0.10.0...v0.11.0) (2021-08-01)
 
 
