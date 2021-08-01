@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](///compare/v0.5.0...v0.6.0) (2021-08-01)
+
+
+### Features
+
+* added custom output path for the images 328b78d
+* implemented native images loader from webpack 82b79ee
+
 ## [0.5.0](///compare/v0.4.0...v0.5.0) (2021-08-01)
 
 
