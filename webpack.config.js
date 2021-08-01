@@ -4,6 +4,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
+const DotenvPlugin = require('dotenv-webpack')
 
 /**
  * @type {import('webpack').Configuration}
@@ -76,7 +77,8 @@ module.exports = {
           to: 'assets/images'
         }
       ]
-    })
+    }),
+    new DotenvPlugin()
   ],
   optimization: {
     minimize: true,
