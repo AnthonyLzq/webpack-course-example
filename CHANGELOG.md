@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](///compare/v0.10.0...v0.11.0) (2021-08-01)
+
+
+### Features
+
+* implemented webpack config in development mode 6e0e5b0
+* implemented webpack config in production mode and fixed duplicated files and cleaning dist folder in every build 6f102ba
+
 ## [0.10.0](///compare/v0.9.0...v0.10.0) (2021-08-01)
 
 
