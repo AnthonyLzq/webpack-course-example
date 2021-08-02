@@ -1,8 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
-const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
 const DotenvPlugin = require('dotenv-webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
@@ -20,6 +18,7 @@ module.exports = {
     assetModuleFilename: 'assets/images/[name][ext]'
   },
   mode: 'development',
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js'],
     alias: {
@@ -79,13 +78,6 @@ module.exports = {
     }),
     new BundleAnalyzerPlugin()
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CSSMinimizerPlugin(),
-      new TerserPlugin()
-    ]
-  },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
