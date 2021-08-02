@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.15.0](https://github.com/AnthonyLzq/webpack-course-example/compare/v0.14.0...v0.15.0) (2021-08-02)
+
+
+### Features
+
+* implement source map for development mode ([9efd3bf](https://github.com/AnthonyLzq/webpack-course-example/commit/9efd3bf4c8fbbd5e231cd5e8f3a42f1adc4d1ec7))
+
 ## [0.14.0](https://github.com/AnthonyLzq/webpack-course-example/compare/v0.13.0...v0.14.0) (2021-08-02)
 
 
