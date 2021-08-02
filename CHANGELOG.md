@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0](https://github.com/AnthonyLzq/webpack-course-example/compare/v0.13.0...v0.14.0) (2021-08-02)
+
+
+### Features
+
+* implemented webpack bundle analyzer ([ce656af](https://github.com/AnthonyLzq/webpack-course-example/commit/ce656af4d12ce8037e4e5ca7da8587a623b4f127))
+
 ## [0.13.0](https://github.com/AnthonyLzq/webpack-course-example/compare/v0.12.0...v0.13.0) (2021-08-02)
 
 

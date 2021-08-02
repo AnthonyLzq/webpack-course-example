@@ -1,6 +1,6 @@
 {
   "name": "webpack-portfolio-example",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "A minimal portfolio with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
