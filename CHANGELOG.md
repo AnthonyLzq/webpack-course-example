@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/AnthonyLzq/webpack-course-example/compare/v0.12.0...v0.13.0) (2021-08-02)
+
+
+### Features
+
+* added environment file creation ([dfec331](https://github.com/AnthonyLzq/webpack-course-example/commit/dfec3314decb1b42c5cddaba301d794a798e88a2))
+* implemented webpack dev server ([e3640d6](https://github.com/AnthonyLzq/webpack-course-example/commit/e3640d6397069d97485d0d1b85db6067c8f87542))
+* netlify config ([4900242](https://github.com/AnthonyLzq/webpack-course-example/commit/49002429870b6de920879176176717c6c102ff54))
+
 ## [0.12.0](///compare/v0.11.0...v0.12.0) (2021-08-01)
 
 
