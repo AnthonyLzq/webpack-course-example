@@ -4,12 +4,12 @@
   "description": "A minimal portfolio with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn env && webpack --config webpack.config.js",
     "release": "standard-version",
     "dev": "webpack --config webpack.config.dev.js",
     "watch": "webpack --watch --config webpack.config.js",
-    "env": "node ./scripts/create-env.js"
+    "env": "node ./scripts/create-env.js",
+    "service": "webpack serve --config webpack.config.dev.js"
   },
   "keywords": [
     "webpack"
@@ -31,6 +31,7 @@
     "terser-webpack-plugin": "^5.1.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

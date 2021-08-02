@@ -19,7 +19,6 @@ module.exports = {
     assetModuleFilename: 'assets/images/[name][ext]'
   },
   mode: 'development',
-  watch: true,
   resolve: {
     extensions: ['.js'],
     alias: {
@@ -84,5 +83,11 @@ module.exports = {
       new CSSMinimizerPlugin(),
       new TerserPlugin()
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    historyApiFallback: true,
+    port: 1999
   }
 }
