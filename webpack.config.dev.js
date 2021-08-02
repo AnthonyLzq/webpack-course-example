@@ -5,6 +5,7 @@ const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const DotenvPlugin = require('dotenv-webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 /**
  * @type {import('webpack').Configuration}
@@ -75,7 +76,8 @@ module.exports = {
     new DotenvPlugin(),
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: true
-    })
+    }),
+    new BundleAnalyzerPlugin()
   ],
   optimization: {
     minimize: true,
